@@ -109,16 +109,31 @@ img {
 /* =========================
    HERO
 ========================= */
-hero {
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero img {
+.hero-image {
   display: block;
   width: 100%;
+  max-width: 1200px;
   height: auto;
+  margin: 0 auto;
   object-fit: contain;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero-image {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 .hero {
     min-height: 92vh;
