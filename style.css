@@ -1095,3 +1095,9 @@ footer p {
         bottom: 15px;
     }
 }
+bg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
